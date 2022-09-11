@@ -21,7 +21,7 @@ class MyWidget(QtWidgets.QWidget):
     @QtCore.Slot()
     def magic(self):
         self.text.setText(random.choice(self.hello))
-        
+
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
 
