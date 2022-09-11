@@ -47,7 +47,7 @@ if __name__ == '__main__':
     gui.title("Calculator Karl")
     
     #window size
-    gui.geometry("270x150")
+    gui.geometry("400x175")
     
     #StringVar() is the variable class
     #instane of the class
