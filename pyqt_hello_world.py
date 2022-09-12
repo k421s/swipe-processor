@@ -1,5 +1,7 @@
 import sys
 import random
+import os
+
 from PySide6 import QtCore, QtWidgets, QtGui #import qt python submodules 
 
 class MyWidget(QtWidgets.QWidget): #class extending qwidget
