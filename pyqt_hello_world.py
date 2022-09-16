@@ -12,11 +12,25 @@ class MyWidget(QtWidgets.QWidget): #class extending qwidget
 
         #add and align buttons
         self.button = QtWidgets.QPushButton("Click Me!")
-        self.text = QtWidgets.QLabel("Hello World", alignment = QtCore.Qt.AlignCenter)
+        self.text = QtWidgets.QLabel("Hello World", alignment = QtCore.Qt.AlignRight)
+        
+        #attempting to add a 2nd button - it wont do anything yet
+        self.button2 = QtWidgets.QPushButton("Second Click Me!")
+        self.button3 = QtWidgets.QPushButton("third Click Me!")
+        self.button4 = QtWidgets.QPushButton("fourth Click Me!")
+        self.button5 = QtWidgets.QPushButton("fifth Click Me!")
 
+        # layout layer
         self.layout = QtWidgets.QVBoxLayout(self)
         self.layout.addWidget(self.text)
         self.layout.addWidget(self.button)
+        
+        #adding new button to layer:
+        self.layout.addWidget(self.button2)
+        self.layout.addWidget(self.button3)
+        self.layout.addWidget(self.button4)
+        self.layout.addWidget(self.button5)
+
 
         #magic member function to choose random from greeting pool
         self.button.clicked.connect(self.magic)
