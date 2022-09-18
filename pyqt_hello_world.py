@@ -17,7 +17,6 @@ class MyWidget(QtWidgets.QWidget): #class extending qwidget
         self.button6 = QtWidgets.QPushButton("sixth Click Me!")
         
 
-
         # setting grid layout
         self.layout = QtWidgets.QGridLayout(self)
         
